@@ -6,22 +6,22 @@
     <title>Todo App</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-gradient-to-br from-blue-600 to-blue-900 min-h-screen flex items-center justify-center">
-    <div class="px-4 w-full">
-      <div class="bg-white rounded-2xl p-8 shadow-2xl w-full max-w-md mx-auto">
-        <h1 class="text-4xl font-bold mb-8 text-gray-800 text-center">
+  <body class="bg-gradient-to-br from-blue-600 to-blue-900 min-h-screen flex items-center justify-center p-2 sm:p-4">
+    <div class="w-full">
+      <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg sm:shadow-xl md:shadow-2xl w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-gray-800 text-center">
           📝 My Tasks
         </h1>
-        <form class="flex gap-2 mb-6">
+        <form class="flex flex-col sm:flex-row gap-2 mb-4 sm:mb-6">
           <input
             type="text"
             id="todo"
             placeholder="Add a new task..."
-            class="flex-1 px-4 py-3 rounded-lg bg-gray-100 border-2 border-gray-300 focus:border-blue-500 focus:bg-white outline-none transition-all"
+            class="flex-1 px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-gray-100 border-2 border-gray-300 focus:border-blue-500 focus:bg-white outline-none transition-all text-sm sm:text-base"
           />
           <button
             type="button"
-            class="bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl active:scale-95"
+            class="bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl active:scale-95 text-sm sm:text-base whitespace-nowrap"
             onclick="addTask()"
           >
             Add
